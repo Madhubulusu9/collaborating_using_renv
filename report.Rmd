@@ -45,7 +45,11 @@ random_numbers3_breaks <- as.numeric(
   )
 )
 
-colors <- wesanderson::wes_palette("Zissou1", 4)
+# Wes Anderson palette (User B)
+# colors <- wesanderson::wes_palette("Zissou1", 4)
+
+# RColorBrewer palette (User A)
+colors <- RColorBrewer::brewer.pal(4, "Set1")
 
 point_color <- colors[random_numbers3_breaks]
 plot(
